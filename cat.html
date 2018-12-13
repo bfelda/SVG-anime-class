@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cats Travel</title>
+    <style>
+    :root {
+    --cat-px: 0px;
+    --steps: 11;
+    }
+
+    .anime1 {
+    width: 400px;
+    height: 200px;
+    background-position: 0;
+    background: url('https://i.pinimg.com/originals/f3/ad/65/f3ad65d892d66c5a6303ade456382c96.png') var(--cat-px) 0;
+    animation: walking 1s steps(var(--steps)) infinite;
+    }
+
+    @keyframes walking {
+    100% { background-position: var(--cat-px) -2200px; }
+    }
+
+    .preview > img{
+    max-width: 400px;
+    }
+
+    .preview {
+    float:right;
+    }
+    </style>
+</head>
+<body>
+    <div class="anime1"></div>
+        <div class="preview">
+        <img src="https://i.pinimg.com/originals/f3/ad/65/f3ad65d892d66c5a6303ade456382c96.png" alt="">
+    </div>
+</body>
+</html>

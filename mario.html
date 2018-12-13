@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mario</title>
+    <style>
+    :root {
+        --back-width: 512;
+        --back-height: 432;
+        --bushes-width: 508;
+        --bushes-height: 79;
+        --ground-width: 68;
+        --ground-height: 24;
+        --mario-width: 30;
+        --mario-height: 54;
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+
+    body{
+        background-image: 
+        url('http://portfolio.kageetai.net/mario/mario.gif'),
+            url('http://portfolio.kageetai.net/mario/ground.png'),
+            url('http://portfolio.kageetai.net/mario/bushes.png'),
+            url('http://portfolio.kageetai.net/mario/back.png');
+        background-color: #F8E0B0;
+        background-repeat:
+            no-repeat,
+            repeat-x,
+            repeat-x,
+            repeat-x;
+        background-position:
+            left 30% bottom 24px,
+            left 0px bottom 0px,
+            left 0px bottom 24px,
+            left 0px bottom 0px;
+        animation: back 15s infinite linear;
+    }
+
+    @keyframes back {
+    0% {
+        background-position:
+        left 30% bottom 24px,
+        left 0px bottom 0px,
+        left 0px bottom 24px,
+        left 0px bottom 0px;
+    }
+    50% {
+        background-position:
+        left 50% bottom 24px,
+        left -816px bottom 0px,
+        left -508px bottom 24px,
+        left -256px bottom 0px;
+    }
+    100% {
+        background-position:
+        left 30% bottom 24px,
+        left -1632px bottom 0px,
+        left -1016px bottom 24px,
+        left -512px bottom 0px;
+    }
+}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
