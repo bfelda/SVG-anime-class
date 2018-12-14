@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cloud-Line</title>
+    <style>
+        .cloud {
+            fill: none;
+            stroke-dasharray: 900;
+            stroke-dashoffset: 900;
+            animation: dash 2s ease-out infinite;
+        }
+
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 900
+            }
+
+            to {
+                stroke-dashoffset: 0
+            }
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 120px;
+            width: 320px;
+        }
+    </style>
+</head>
+
+<body>
+    <?xml version="1.0" encoding="utf-8"?>
+    <div class="center">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 316 230"
+            width="316" height="230">
+            <path class="cloud" stroke="#4cb2e1" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M61.8,55.8
+            c-33.4,4.2-57,34.7-52.7,68c3.9,31,30.5,53.5,61,53.2c0,0.3,0.1,0.6,0.1,0.8c3,23.3,24.2,39.7,47.5,36.8
+            c13.5-1.7,24.8-9.6,31.2-20.5c11.1,17.6,31.8,28.2,53.9,25.4c23-2.9,40.9-19.5,46.6-40.6c4.2,0.5,8.5,0.5,12.8,0
+            c28.5-3.6,48.6-29.6,45-58c-2.3-18.1-13.7-32.8-28.9-40.2c0-2.4-0.1-4.8-0.4-7.2c-3.5-27.6-28.7-47.1-56.3-43.6
+            c-6.7,0.8-12.9,3-18.5,6.1c-12.6-21-36.7-33.7-62.5-30.4c-28.3,3.6-49.9,25.3-54.6,52.1" />
+        </svg>
+    </div>
+</body>
+</html>

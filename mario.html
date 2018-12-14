@@ -42,31 +42,44 @@
     }
 
     @keyframes back {
-    0% {
-        background-position:
-        left 30% bottom 24px,
-        left 0px bottom 0px,
-        left 0px bottom 24px,
-        left 0px bottom 0px;
+        0% {
+            background-position:
+            left 30% bottom 24px,
+            left 0px bottom 0px,
+            left 0px bottom 24px,
+            left 0px bottom 0px;
+        }
+        50% {
+            background-position:
+            left 50% bottom 24px,
+            left -816px bottom 0px,
+            left -508px bottom 24px,
+            left -256px bottom 0px;
+        }
+        100% {
+            background-position:
+            left 30% bottom 24px,
+            left -1632px bottom 0px,
+            left -1016px bottom 24px,
+            left -512px bottom 0px;
+        }
+
     }
-    50% {
-        background-position:
-        left 50% bottom 24px,
-        left -816px bottom 0px,
-        left -508px bottom 24px,
-        left -256px bottom 0px;
+    .elements {
+        position:absolute;
+        top: 0;
+        right:0;
+        background: hsla(191, 50%, 50%, .5);
+        padding: 10px;
     }
-    100% {
-        background-position:
-        left 30% bottom 24px,
-        left -1632px bottom 0px,
-        left -1016px bottom 24px,
-        left -512px bottom 0px;
-    }
-}
     </style>
 </head>
 <body>
-    
+    <div class="elements">
+        <img src="http://portfolio.kageetai.net/mario/mario.gif" alt="">
+        <img src="http://portfolio.kageetai.net/mario/ground.png" alt="">
+        <img src="http://portfolio.kageetai.net/mario/bushes.png" alt="">
+        <img src="http://portfolio.kageetai.net/mario/back.png" alt="">
+    </div>
 </body>
 </html>
